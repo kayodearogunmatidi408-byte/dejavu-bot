@@ -1,0 +1,12 @@
+image: python:3.11
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - echo "✅ Code pushed to GitLab! Railway will auto-deploy."
+    - echo "🚀 Check Railway dashboard for deployment status."
+  only:
+    - main
